@@ -101,8 +101,8 @@ def main():
     sent_ids = load_sent_log()
     end_time = datetime.now() + timedelta(minutes=120)
 
-    send_file(BOT_TOKEN, CHAT_ID, "check.py", f"Test")
-    return
+    # send_file(BOT_TOKEN, CHAT_ID, "check.py", f"Test")
+    # return
 
     while datetime.now() < end_time:
         try:
