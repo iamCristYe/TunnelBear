@@ -1,4 +1,4 @@
-name: check
+name: check_N
 
 on:
   # schedule:
@@ -55,6 +55,7 @@ jobs:
           CHAT_ID: ${{ secrets.CHAT_ID }}
           CHANNEL_URL: ${{ secrets.CHANNEL_URL }}
           COOKIE: ${{ secrets.COOKIE }}
+          ARTIST_CHANNEL_URL: https://music.youtube.com/channel/UCov14bMqiBPdPLFuHQ_K-eg
 
     - name: Stop OpenVPN
       run: |
