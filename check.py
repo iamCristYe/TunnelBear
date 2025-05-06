@@ -69,6 +69,7 @@ def get_latest_video():
         "cookiefile": cookie_file,
         "extract_flat": True,
         "dump_single_json": True,
+        "playlist_items": "1",
     }
     with YoutubeDL(ydl_opts) as ydl:
         result = ydl.extract_info(ARTIST_CHANNEL_URL, download=False)
